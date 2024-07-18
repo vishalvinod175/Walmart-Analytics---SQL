@@ -153,7 +153,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
   Gender-Based Sales: Analyzed sales distribution, revealing that female customers accounted for 55% of total purchases, amounting to $166391.   
 
 * Payment Methods:   
-  Usage Frequency: Discovered that cash payments were used in 35% of transactions, while  e-wallets accounted for 34% and e-wallets for 31%.   
+  Usage Frequency: Discovered that Cash payments were used in 35% of transactions, while E-wallets accounted for 34% and Credit Card Payments for 31%.   
   Revenue Contribution: Calculated that transactions made via credit cards contributed to 50% of the total revenue.   
 
 * Product Line Performance:   
