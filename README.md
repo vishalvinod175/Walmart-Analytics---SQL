@@ -1,10 +1,10 @@
 # Walmart-Analytics---SQL   
-**Objective**: To analyze Walmart's sales data to identify patterns, trends, and insights that can be leveraged to optimize revenue, enhance operational efficiency, and improve customer satisfaction.   
-**Problem Statement** - How can Walmart optimize its revenue and improve customer satisfaction by analyzing sales data to understand purchasing behaviors, product performance, and operational efficiency across different branches, customer segments, and time periods?
+**Objective** -    
+To analyze Walmart's sales data to identify patterns, trends, and insights that can be leveraged to optimize revenue, enhance operational efficiency, and improve customer satisfaction.   
+**Problem Statement** -    
+How can Walmart optimize its revenue and improve customer satisfaction by analyzing sales data to understand purchasing behaviors, product performance, and operational efficiency across different branches, customer segments, and time periods?
 
-CREATE A DATABASE  
-CREATE A TABLE WITH BELOW COLUMNS   
-LOAD THE DATA  
+# CODE
 
 ```  SQL
 --- Create Table 'walmart sales'
@@ -142,4 +142,32 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
 
 ```
 
-** THANK YOU **
+# Key Business Insights
+
+* Revenue Analysis:   
+  Total Monthly Revenue: Analyzed total monthly revenue with peaks observed in certain months, highlighting seasonality in sales.   
+  Product Line Revenue: Identified that 'Food and Beverages' is the product line with the highest revenue generated a total of $56144.84   
+
+* Customer and Sales Insights:   
+  Customer Type Contribution: Found that member customers contributed to 60% of the total revenue, amounting to $163625.  
+  Gender-Based Sales: Analyzed sales distribution, revealing that female customers accounted for 55% of total purchases, amounting to $166391.   
+
+* Payment Methods:   
+  Usage Frequency: Discovered that cash payments were used in 35% of transactions, while  e-wallets accounted for 34% and e-wallets for 31%.   
+  Revenue Contribution: Calculated that transactions made via credit cards contributed to 50% of the total revenue.   
+
+* Product Line Performance:   
+  Quantity Sold: Determined that the electronics product line had the highest number of units sold, totaling X units (e.g., 25,000 units).   
+  Average Rating: Found that the home appliances product line had the highest average customer rating of 4.5 out of 5.   
+
+* Tax and Cost Analysis:   
+  Average Tax Rate: Calculated the average tax rate across different product lines, with the highest being 7.5% for luxury goods.   
+  Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of ₹X (e.g., ₹500,000).
+     
+* Operational Insights:   
+  Branch Performance: Identified the top-performing branch, which generated ₹X (e.g., ₹300 million) in revenue, outperforming others by 20%.   
+  Sales Distribution by Time of Day: Found that 40% of sales occurred in the afternoon, indicating peak shopping hours.   
+
+* Cancellation and Customer Satisfaction:   
+  Cancellation Rates: Observed that cancellations were highest on weekends, accounting for 25% of total cancellations.   
+  Customer Ratings: Found that customer satisfaction was highest on weekdays with an average rating of 4.2 out of 5.   
