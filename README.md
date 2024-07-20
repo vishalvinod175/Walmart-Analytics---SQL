@@ -94,7 +94,7 @@ SELECT product_line, ROUND(SUM(total),2) AS revenue FROM sales GROUP BY product_
 --- city with most revenue
 SELECT city,branch, ROUND(SUM(total),2) AS revenue FROM sales GROUP BY city,branch;
 
---- Amount of tax applied on various product lines
+--- Amount of tax collection on various product lines
 SELECT product_line, ROUND(AVG(tax_pct),2) AS tax FROM sales GROUP BY product_line;
 
 --- branches selling more than the average number of products sold
@@ -112,10 +112,10 @@ SELECT day_name, time_of_day, SUM(quantity) AS total FROM sales GROUP BY day_nam
 --- most revenue by customer type
 SELECT customer_type, ROUND(SUM(total)) AS revenue FROM sales GROUP BY customer_type;
 
----  city wise VAT 
+---  city wise VAT collection
 SELECT city, ROUND(AVG(tax_pct),1) AS Tax FROM sales GROUP BY city;
 
---- customer type wise VAT
+--- customer type wise VAT collection
 SELECT customer_type, ROUND(AVG(tax_pct),1) AS Tax FROM sales GROUP BY customer_type;
 
 --- cutomer types
@@ -162,13 +162,91 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
   Quantity Sold: Determined that the electronics accessories product line had the highest number of units sold, totaling 961 units.   
   Average Rating: Found that the Food & Beverages product line had the highest average customer rating of 7 out of 10.   
 
-* Tax and Cost Analysis:   
-  Average Tax Rate: Calculated the average tax rate across different product lines, with the highest being 16.03% for Home & Lifestyle goods.   
-  Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of $101868
+* Cost Analysis and Tax:     
+  Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of $101868.
+  Tax: 5% Tax applied on all products as VAT.
      
 * Operational Insights:   
   Branch Performance: Identified the top-performing branch as 'C' Branch, which generated $110490.   
   Sales Distribution by Time of Day: Found that 40% of sales occurred in the afternoon, indicating peak shopping hours.   
 
 * Customer Satisfaction:     
-  Customer Ratings: Found that customer satisfaction was highest for 'C' Branch with an average rating of 7.06 on 10.   
+  Customer Ratings: Found that customer satisfaction was highest for 'C' Branch with an average rating of 7.06 on 10.
+
+
+
+  # Recommendations
+
+* Revenue Optimization:   
+
+1. Focus on High-Revenue Product Lines:   
+
+    Recommendation: Increase inventory and marketing efforts for high-revenue product lines such as 'Food and Beverages'.   
+    Action: Develop targeted promotions and bundle offers for these product lines to boost sales further.   
+
+2. Optimize Pricing Strategies:   
+
+    Recommendation: Implement dynamic pricing strategies based on demand patterns identified in the monthly revenue analysis.   
+    Action: Adjust prices during peak seasons to maximize revenue while offering discounts during off-peak periods to maintain steady sales.   
+
+* Customer Satisfaction:   
+
+1. Enhance Customer Experience for High-Value Segments:   
+
+    Recommendation: Focus on member customers who contributed 60% of the total revenue.   
+    Action: Offer loyalty programs, personalized services, and exclusive deals to retain member customers and attract normal customers.   
+
+2. Improve Ratings for Low-Rated Product Lines:   
+
+    Recommendation: Address issues in product lines with low customer ratings, such as by improving product quality or providing better customer support.   
+    Action: Conduct surveys and gather feedback to identify specific areas for improvement.   
+
+
+* Operational Efficiency:
+
+1. Align Staffing with Peak Sales Periods:   
+
+    Recommendation: Adjust staffing levels based on the sales distribution analysis, which shows most of sales occur in the evening.   
+    Action: Increase staff during peak hours to ensure smooth operations and better customer service.   
+
+2. Replicate Success of High-Performing Branches:   
+
+    Recommendation: Analyze the practices of top-performing branch which is 'C' branch and understand what they are doing right.   
+    Action: Implement best practices from these branches across other locations to improve overall performance.   
+
+* Product Performance:   
+
+1. Promote High-Rated Products:   
+
+    Recommendation: Highlight and promote product lines with the highest average customer ratings, such as 'Food and Beverages' with a rating of 7 out of 10.   
+    Action: Use these ratings in marketing campaigns to attract more customers and build trust in product quality.   
+
+2. Address Underperforming Products:   
+
+    Recommendation: Identify and analyze underperforming products to understand the reasons behind their low sales.   
+    Action: Consider discontinuing low-performing products or rebranding and repositioning them in the market.   
+
+* Payment Method Optimization:   
+
+1. Encourage Preferred Payment Methods:   
+
+    Recommendation: Promote the use of credit cards and E-Wallets to access faster payments, pushing incentives like rewards, discounts to attract customers ad driving sales.    
+    Action: Offer discounts or cashback incentives for customers using preferred payment methods.      
+
+2. Streamline Payment Processing:   
+
+    Recommendation: Improve the efficiency of payment processing systems to handle the high volume of transactions through popular payment methods.   
+    Action: Invest in technology and infrastructure to ensure a seamless payment experience for customers.   
+
+* Cost Management:
+
+1. Monitor and Optimize COGS:   
+
+    Recommendation: Regularly review and manage the cost of goods sold (COGS) to maintain profitability.   
+    Action: Negotiate better terms with suppliers and optimize inventory management to reduce costs.   
+
+2. Optimize Tax Strategies:   
+
+    Recommendation: Utilize insights from the average tax rate analysis to optimize pricing and tax strategies.   
+    Action: Adjust prices to reflect tax implications and explore tax-saving opportunities where applicable.   
+
