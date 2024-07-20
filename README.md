@@ -2,7 +2,8 @@
 **Objective** -    
 To analyze Walmart's sales data to identify patterns, trends, and insights that can be leveraged to optimize revenue, enhance operational efficiency, and improve customer satisfaction.   
 **Problem Statement** -    
-How can Walmart optimize its revenue and improve customer satisfaction by analyzing sales data to understand purchasing behaviors, product performance, and operational efficiency across different branches, customer segments, and time periods?
+How can Walmart optimize its revenue and improve customer satisfaction by analyzing sales data to understand purchasing behaviors, product performance, and operational efficiency across different branches, customer segments, and time periods?   
+**Tools Used** - SQL, MySQL, MS Excel, PowerBI
 
 # CODE
 
