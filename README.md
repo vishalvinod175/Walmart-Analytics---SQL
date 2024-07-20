@@ -78,13 +78,15 @@ SELECT DISTINCT product_line FROM sales;
 SELECT payment, COUNT(payment) AS times used FROM sales GROUP BY payment;
 
 --- number of products sold in different product lines
-SELECT product_line, SUM(Quantity) AS Number of products FROM sales GROUP BY product_line;
+SELECT product_line, SUM(Quantity) AS Number of products FROM sales GROUP BY product_line;      
 
 --- monthly revenue
 SELECT month_name, SUM(total) AS revenue FROM sales GROUP BY month_name;
 
---- monthly cost of goods sold
-SELECT month_name, SUM(cogs) AS cogs per month FROM sales GROUP BY month_name;
+--- average of monthly cost of goods sold
+WITH cte AS 
+(SELECT month_name, SUM(cogs) AS average FROM sales GROUP BY month_name)
+SELECT ROUND(AVG(average),2) FROM cte;
 
 --- Revenue from various product lines 
 SELECT product_line, ROUND(SUM(total),2) AS revenue FROM sales GROUP BY product_line;
@@ -157,17 +159,16 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
   Revenue Contribution: Calculated that transactions made via credit cards contributed to 50% of the total revenue.   
 
 * Product Line Performance:   
-  Quantity Sold: Determined that the electronics product line had the highest number of units sold, totaling X units (e.g., 25,000 units).   
-  Average Rating: Found that the home appliances product line had the highest average customer rating of 4.5 out of 5.   
+  Quantity Sold: Determined that the electronics accessories product line had the highest number of units sold, totaling 961 units.   
+  Average Rating: Found that the Food & Beverages product line had the highest average customer rating of 7 out of 10.   
 
 * Tax and Cost Analysis:   
-  Average Tax Rate: Calculated the average tax rate across different product lines, with the highest being 7.5% for luxury goods.   
-  Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of ₹X (e.g., ₹500,000).
+  Average Tax Rate: Calculated the average tax rate across different product lines, with the highest being 16.03% for Home & Lifestyle goods.   
+  Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of $101868
      
 * Operational Insights:   
-  Branch Performance: Identified the top-performing branch, which generated ₹X (e.g., ₹300 million) in revenue, outperforming others by 20%.   
+  Branch Performance: Identified the top-performing branch as 'C' Branch, which generated $110490.   
   Sales Distribution by Time of Day: Found that 40% of sales occurred in the afternoon, indicating peak shopping hours.   
 
-* Cancellation and Customer Satisfaction:   
-  Cancellation Rates: Observed that cancellations were highest on weekends, accounting for 25% of total cancellations.   
-  Customer Ratings: Found that customer satisfaction was highest on weekdays with an average rating of 4.2 out of 5.   
+* Customer Satisfaction:     
+  Customer Ratings: Found that customer satisfaction was highest for 'C' Branch with an average rating of 7.06 on 10.   
