@@ -146,38 +146,38 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
 
 # Key Business Insights
 
-* Revenue Analysis:   
+* **Revenue Analysis**:   
   Total Monthly Revenue: Analyzed total monthly revenue with peaks observed in certain months, highlighting seasonality in sales.   
   Product Line Revenue: Identified that 'Food and Beverages' is the product line with the highest revenue generated a total of $56144.84   
 
-* Customer and Sales Insights:   
+* **Customer and Sales Insights**:   
   Customer Type Contribution: Found that member customers contributed to 60% of the total revenue, amounting to $163625.  
   Gender-Based Sales: Analyzed sales distribution, revealing that female customers accounted for 55% of total purchases, amounting to $166391.   
 
-* Payment Methods:   
+* **Payment Methods**:   
   Usage Frequency: Discovered that Cash payments were used in 35% of transactions, while E-wallets accounted for 34% and Credit Card Payments for 31%.   
   Revenue Contribution: Calculated that transactions made via credit cards contributed to 50% of the total revenue.   
 
-* Product Line Performance:   
+* **Product Line Performance**:   
   Quantity Sold: Determined that the electronics accessories product line had the highest number of units sold, totaling 961 units.   
   Average Rating: Found that the Food & Beverages product line had the highest average customer rating of 7 out of 10.   
 
-* Cost Analysis and Tax:     
+* **Cost Analysis and Tax**:     
   Monthly COGS: Analyzed the monthly cost of goods sold (COGS), identifying a consistent pattern with an average monthly COGS of $101868.
   Tax: 5% Tax applied on all products as VAT.
      
-* Operational Insights:   
+* **Operational Insights**:   
   Branch Performance: Identified the top-performing branch as 'C' Branch, which generated $110490.   
   Sales Distribution by Time of Day: Found that 40% of sales occurred in the afternoon, indicating peak shopping hours.   
 
-* Customer Satisfaction:     
+* **Customer Satisfaction**:     
   Customer Ratings: Found that customer satisfaction was highest for 'C' Branch with an average rating of 7.06 on 10.
 
 
 
   # Recommendations
 
-* Revenue Optimization:   
+* **Revenue Optimization**:   
 
 1. Focus on High-Revenue Product Lines:   
 
@@ -189,7 +189,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
     Recommendation: Implement dynamic pricing strategies based on demand patterns identified in the monthly revenue analysis.   
     Action: Adjust prices during peak seasons to maximize revenue while offering discounts during off-peak periods to maintain steady sales.   
 
-* Customer Satisfaction:   
+* **Customer Satisfaction**:   
 
 1. Enhance Customer Experience for High-Value Segments:   
 
@@ -202,7 +202,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
     Action: Conduct surveys and gather feedback to identify specific areas for improvement.   
 
 
-* Operational Efficiency:
+* **Operational Efficiency**:
 
 1. Align Staffing with Peak Sales Periods:   
 
@@ -214,7 +214,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
     Recommendation: Analyze the practices of top-performing branch which is 'C' branch and understand what they are doing right.   
     Action: Implement best practices from these branches across other locations to improve overall performance.   
 
-* Product Performance:   
+* **Product Performance**:   
 
 1. Promote High-Rated Products:   
 
@@ -226,7 +226,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
     Recommendation: Identify and analyze underperforming products to understand the reasons behind their low sales.   
     Action: Consider discontinuing low-performing products or rebranding and repositioning them in the market.   
 
-* Payment Method Optimization:   
+* **Payment Method Optimization**:   
 
 1. Encourage Preferred Payment Methods:   
 
@@ -238,7 +238,7 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
     Recommendation: Improve the efficiency of payment processing systems to handle the high volume of transactions through popular payment methods.   
     Action: Invest in technology and infrastructure to ensure a seamless payment experience for customers.   
 
-* Cost Management:
+* **Cost Management**:
 
 1. Monitor and Optimize COGS:   
 
@@ -248,5 +248,12 @@ SELECT day_name,branch, ROUND(AVG(rating),2) AS Rating FROM sales GROUP BY day_n
 2. Optimize Tax Strategies:   
 
     Recommendation: Utilize insights from the average tax rate analysis to optimize pricing and tax strategies.   
-    Action: Adjust prices to reflect tax implications and explore tax-saving opportunities where applicable.   
+    Action: Adjust prices to reflect tax implications and explore tax-saving opportunities where applicable.
+
+
+
+# Final Dashboard   
+
+![2024-07-20](https://github.com/user-attachments/assets/7937b876-322b-46d7-8f94-69830c528c74)
+
 
